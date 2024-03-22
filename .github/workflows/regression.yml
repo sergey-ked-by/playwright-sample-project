@@ -43,6 +43,6 @@ jobs:
           else
             export ENV='${{github.event.inputs.environment}}'
             export args='${{github.event.inputs.arguments}}'
-          fi
+          if
             echo "::set-output name=env_name::${ENV:-prod}"
             pytest ${args} --bn ${{ matrix.browser }}
