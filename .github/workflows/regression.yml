@@ -1,7 +1,6 @@
 name: TestRegression
 
 on:
-  push: {}
 
   workflow_dispatch:
     inputs:
